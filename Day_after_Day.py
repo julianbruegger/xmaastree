@@ -7,14 +7,6 @@ import time
 
 speed = 0.3
 
-#print (day)
-#print (month)
-
-#if month == '12':
-#    print ('\ntotal ' + str(anzahl) + ' Laempli  anzuenden!\n')
-#else: 
-#    print ('Wir befinden uns nicht im Monat Dezember')
-
 now = datetime.datetime.now()
 day = now.strftime('%d')
 month = now.strftime('%m')
