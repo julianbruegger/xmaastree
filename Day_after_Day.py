@@ -7,13 +7,6 @@ import time
 
 speed = 0.3
 
-now = datetime.datetime.now()
-day = now.strftime('%d')
-month = now.strftime('%m')
-anzahl = int(day)
-
-
-
 while True:
     
     now = datetime.datetime.now()
@@ -21,7 +14,11 @@ while True:
     month = now.strftime('%m')
     anzahl = int(day)
     boards = []
-    
+  
+    if month != '12':
+        print 'Es ist NICHT Dezember.'
+        break
+
     for i in range(anzahl):
         led = i + 4
         board = LEDBoard(led, pwm=False)
@@ -32,4 +29,3 @@ while True:
         time.sleep(speed)
         board.on()
         time.sleep(speed)
-        
