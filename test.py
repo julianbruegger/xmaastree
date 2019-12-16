@@ -18,17 +18,25 @@ north2 = LEDBoard(8, 6, 7,pwm=True)
 
 while True:
   south1.off()
+  north2.off()
+  south2.on()
   north1.on()
   time.sleep(speed)
 
-  west1.off() 
+  west1.off()
+  east2.off()
+  west2.on()
   east1.on()
   time.sleep(speed)
 
   north1.off()
+  south2.off()
   south1.on()
+  north2.on()
   time.sleep(speed)
 
   east1.off()
+  west2.off()
+  east2.on()
   west1.on()
   time.sleep(speed)

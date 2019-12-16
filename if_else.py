@@ -15,5 +15,5 @@ anzahl = int(day)
 
 
 
-if datetime.datetime '12'
+if d
         
