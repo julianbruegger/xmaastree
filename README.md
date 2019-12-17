@@ -67,7 +67,7 @@ if month != '12':
 
 Ansonnsten wird das aktuelle Datum abgefragt, je nach Tag gibt es dann ein ``elif`` wleches auf den Tag zutrifft. 
 
-Dort werden dann als erstes alle LED's ausgeschaltet mit ``boardxx.off()``. Danach wird eine Pause gemacht, welche am Anfang definiert worden ist. Zum schluss werden dann die Entsprechenden LED's Angeschaltet. 
+Dort werden dann als erstes alle LED's ausgeschaltet mit ``boardxx.off()``. Danach wird eine Pause gemacht, welche am Anfang definiert worden ist. Zum schluss werden dann die Entsprechenden LED's Angeschaltet mit ``boardxx.on()``
 ```python
 elif (anzahl == 1):
     board01.off()
