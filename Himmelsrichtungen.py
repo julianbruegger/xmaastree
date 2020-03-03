@@ -1,4 +1,5 @@
-
+# Julian Bruegger
+# Turns on LED's 
 speed = 1.5
 
 import time
@@ -6,37 +7,25 @@ from gpiozero import LEDBoard
 from gpiozero.tools import random_values
 from signal import pause
 
-east1  = LEDBoard(16,13,20,pwm=True)
-east2  = LEDBoard(19,26,21,pwm=True)
-south1 = LEDBoard(25,24,23,pwm=True)
-south2 = LEDBoard(9,22,10,pwm=True)
-west1  = LEDBoard(17, 4,14,pwm=True)
-west2  = LEDBoard(27,18,15,pwm=True)
-north1 = LEDBoard(11, 5,12,pwm=True)
-north2 = LEDBoard(8, 6, 7,pwm=True)
+east  = LEDBoard(16,13,20,19,26,21,pwm=True)
+south = LEDBoard(25,24,23,9,22,10,pwm=True)
+west  = LEDBoard(17, 4,14,27,18,15,pwm=True)
+north = LEDBoard(11, 5,12,8, 6, 7,pwm=True)
 
 
 while True:
-  south1.off()
-  north2.off()
-  south2.on()
-  north1.on()
+  south.off()
+  north.on()
   time.sleep(speed)
 
-  west1.off()
-  east2.off()
-  west2.on()
-  east1.on()
+  west.off()
+  east.on()
   time.sleep(speed)
 
-  north1.off()
-  south2.off()
-  south1.on()
-  north2.on()
+  north.off()
+  south.on()
   time.sleep(speed)
 
-  east1.off()
-  west2.off()
-  east2.on()
-  west1.on()
+  east.off()
+  west.on()
   time.sleep(speed)

@@ -406,7 +406,7 @@ while True:
         time.sleep(speed)
         board02.on()
         board01.on() 
-        time.sleep(speed)    
+        time.sleep(speed * 100)    
     elif (anzahl == 17):
         board17.off()
         board16.off()
@@ -450,7 +450,7 @@ while True:
         board03.on()
         board02.on()
         board01.on() 
-        time.sleep(speed)    
+        time.sleep(speed * 100)    
     elif (anzahl == 16):
         board16.off()
         board15.off()
