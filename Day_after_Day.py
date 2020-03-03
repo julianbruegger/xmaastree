@@ -1,4 +1,7 @@
-
+# Julian Bruegger
+# Turns on LED's on after every day. 
+#
+# More Infos in the README.md file 
 from gpiozero import LEDBoard
 from gpiozero.tools import random_values
 from signal import pause

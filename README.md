@@ -86,7 +86,7 @@ Die Hilfe von Urs hat viel zum allgemeinen verstehen von Python beigetragen.
 Nun behersche ich die Grundlagen von Python und weis auch wie ich bei Problemen googlen muss. Das Projekt hat mit trotz Problemen viel Freude bereitet. 
 
 ### Python
-Ich hatte schon einfache kentnisse von Python, wusste aber noch nicht wie ich diese genau einsetzen muss. 
+Ich hatte schon einfache Kenntnisse von Python, wusste aber noch nicht wie ich diese genau einsetzen muss. 
 
 Neu war merheitlich folgendes:
 - Python Module welche zusätzliche Funktionen einbinden können. 
